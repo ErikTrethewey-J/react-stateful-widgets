@@ -37,9 +37,10 @@ STEP 4:
   Do you remember the operator we use to do "not"?
 */
 
-import React from 'react'; /* STEP 0 */
+import React, {userState} from 'react'; /* STEP 0 */
 
 export default function Spinner() {
+  const [spinnerOn, setSpinnerOn] = userState(true)
 /* STEP 1 */
 
   const toggleSpinner = () => {
